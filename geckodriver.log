@@ -1,0 +1,292 @@
+1695047594706	geckodriver	INFO	Listening on 127.0.0.1:55811
+1695047597837	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofileZROk4C"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695047598525	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695047598533	Marionette	INFO	Listening on port 55827
+Read port: 55827
+1695047599631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1695047601961	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1695049034719	Marionette	INFO	Stopped listening on port 55827
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1695047641287	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1695047641291	Marionette	INFO	Listening on port 55934
+Read port: 55934
+1695047641430	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1695049033511	Marionette	INFO	Stopped listening on port 55934
+Dynamically enable window occlusion 1
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1706866691358	geckodriver	INFO	Listening on 127.0.0.1:50955
+1706866694466	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofilezkBZtJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706866694930	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706866695039	Marionette	INFO	Listening on port 50969
+Read port: 50969
+1706866695281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1706866725821	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+Exiting due to channel error.
+Exiting due to channel error.
+06866874264	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofileeXnUz6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706866874718	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706866874823	Marionette	INFO	Listening on port 56228
+Read port: 56228
+1706866875006	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+1706866904814	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+1706867595732	geckodriver	INFO	Listening on 127.0.0.1:57207
+1706867598805	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofileNirRm4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706867599231	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706867599328	Marionette	INFO	Listening on port 57220
+Read port: 57220
+1706867599504	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+1706867731403	geckodriver	INFO	Listening on 127.0.0.1:57412
+1706867734486	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofilenplDSY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706867734786	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706867734885	Marionette	INFO	Listening on port 57425
+Read port: 57425
+1706867735062	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+1706867764826	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+1706867886245	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869447121	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869493328	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869519962	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869576394	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869884374	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869917580	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706869976317	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+JavaScript warning: https://www.google.com/js/th/wAFWjcG1j0S59k6y9gmRkscrkcYt8sjUn-04af-yL2Q.js line 2 > eval line 6394 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3ixEM4/yM/l/en_GB/oC2H5n-mgug.js?_nc_x=Ij3Wp8lg5Kz, line 108: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/WSt7wnqPUJS.js?_nc_x=Ij3Wp8lg5Kz, line 230: Script terminated by timeout at:
+Y@https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/WSt7wnqPUJS.js?_nc_x=Ij3Wp8lg5Kz:230:3202
+
+JavaScript warning: https://abs.twimg.com/responsive-web/client-web/main.56f5a4aa.js, line 1: Script terminated by timeout at:
+845907/c/this._updateSessionStorage@https://abs.twimg.com/responsive-web/client-web/main.56f5a4aa.js:1:2430828
+
+JavaScript warning: https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_239650_389064&as=CNaSF1s5n7E%2FgEYEHgiubg&hl=en, line 204: Script terminated by timeout at:
+Ui@/_/gsi/_/js/k=gsi.gsi.en.qIkKk021zQM.O/am=ACR0/d=1/rs=AF0KOtXBkRfwHi8UNGGGko7Ftt71iYIKhw/m=credential_button_library:204:277
+Qi@/_/gsi/_/js/k=gsi.gsi.en.qIkKk021zQM.O/am=ACR0/d=1/rs=AF0KOtXBkRfwHi8UNGGGko7Ftt71iYIKhw/m=credential_button_library:204:225
+Li.prototype.H@/_/gsi/_/js/k=gsi.gsi.en.qIkKk021zQM.O/am=ACR0/d=1/rs=AF0KOtXBkRfwHi8UNGGGko7Ftt71iYIKhw/m=credential_button_library:201:124
+Li/<@/_/gsi/_/js/k=gsi.gsi.en.qIkKk021zQM.O/am=ACR0/d=1/rs=AF0KOtXBkRfwHi8UNGGGko7Ftt71iYIKhw/m=credential_button_library:195:311
+nc@/_/gsi/_/js/k=gsi.gsi.en.qIkKk021zQM.O/am=ACR0/d=1/rs=AF0KOtXBkRfwHi8UNGGGko7Ftt71iYIKhw/m=credential_button_library:63:102
+b@/_/gsi/_/js/k=gsi.gsi.en.qIkKk021zQM.O/am=ACR0/d=1/rs=AF0KOtXBkRfwHi8UNGGGko7Ftt71iYIKhw/m=credential_button_library:60:473
+
+1706870750099	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+JavaScript error: resource://gre/modules/XULStore.sys.mjs, line 60: Error: Can't find profile directory.
+1706871477771	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+JavaScript warning: https://roar.dev.mgm.com/main.720bf19c104cc075.js, line 4759: Script terminated by timeout at:
+cl@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3927103
+bl@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3927129
+zm@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3927161
+au@https://roar.dev.mgm.com/main.720bf19c104cc075.js:1:2428780
+ub@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3903014
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3912847
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Ab@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913935
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913136
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Ab@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913935
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914150
+Ab@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913935
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914150
+Xa@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913967
+y0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914248
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913613
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Xa@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913967
+y0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914248
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913613
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Ab@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913935
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913136
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Xa@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913967
+y0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914248
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913613
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Ab@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913935
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913136
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Xa@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913967
+y0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914248
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913613
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Ab@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913935
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913136
+b0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914106
+Xa@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913967
+y0@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3914248
+Pb@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3913613
+Pm@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3912568
+detectChanges@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3915548
+tick@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3970404
+65879/initialize/next/<@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3971914
+invoke@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:34808
+onInvoke@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3898024
+invoke@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:34748
+run@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:30151
+run@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3898648
+next@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3971885
+next@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3590776
+_next@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3590460
+next@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3590155
+78645/next/<@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3588117
+B@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3617911
+next@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3587956
+emit@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3895695
+hg@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3899027
+W_@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3899447
+onInvokeTask@https://roar.dev.mgm.com/main.720bf19c104cc075.js:4759:3897968
+invokeTask@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:35347
+runTask@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:30783
+invokeTask@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:36480
+48332/u/this.invoke<@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:36381
+48332/jt/e/u.args[0]@https://roar.dev.mgm.com/polyfills.f14d5c380a1f6c6b.js:1:56216
+
+1706871479616	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+1706871628245	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706871886470	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706873977094	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+JavaScript warning: https://roar.dev.mgm.com/assets/js/dynatrace.js, line 28: Script terminated by timeout at:
+Vc@https://roar.dev.mgm.com/assets/js/dynatrace.js:28:35
+vb@https://roar.dev.mgm.com/assets/js/dynatrace.js:23:183
+n@https://roar.dev.mgm.com/assets/js/dynatrace.js:23:265
+Uc@https://roar.dev.mgm.com/assets/js/dynatrace.js:35:425
+vd@https://roar.dev.mgm.com/assets/js/dynatrace.js:90:21
+sf@https://roar.dev.mgm.com/assets/js/dynatrace.js:168:476
+
+1706873978769	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://roar.dev.mgm.com."
+1706875727370	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706875751793	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706875770262	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+1706878474391	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:203:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:468:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:219:33
+JavaScript warning: https://roar.dev.mgm.com/assets/js/dynatrace.js, line 24: Script terminated by timeout at:
+ca@https://roar.dev.mgm.com/assets/js/dynatrace.js:24:441
+O@https://roar.dev.mgm.com/assets/js/dynatrace.js:24:501
+zb@https://roar.dev.mgm.com/assets/js/dynatrace.js:21:344
+bb@https://roar.dev.mgm.com/assets/js/dynatrace.js:21:235
+Ib@https://roar.dev.mgm.com/assets/js/dynatrace.js:21:451
+rd@https://roar.dev.mgm.com/assets/js/dynatrace.js:38:260
+Sc@https://roar.dev.mgm.com/assets/js/dynatrace.js:38:52
+Uc@https://roar.dev.mgm.com/assets/js/dynatrace.js:36:177
+vd@https://roar.dev.mgm.com/assets/js/dynatrace.js:90:21
+sf@https://roar.dev.mgm.com/assets/js/dynatrace.js:168:476
+
+1706878476155	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1706879159383	Marionette	INFO	Stopped listening on port 57425
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1707117059841	geckodriver	INFO	Listening on 127.0.0.1:62713
+1707117062974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofile3UxtgB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707117063993	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707117065138	Marionette	INFO	Listening on port 62728
+Read port: 62728
+1707117065505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1707117094457	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1707117456743	geckodriver	INFO	Listening on 127.0.0.1:63325
+1707117459823	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Fleek\\AppData\\Local\\Temp\\rust_mozprofile4nu7a3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1707117460562	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1707117460680	Marionette	INFO	Listening on port 63339
+Read port: 63339
+1707117460911	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1707117491428	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.

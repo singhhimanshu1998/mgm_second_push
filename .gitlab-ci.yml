@@ -1,0 +1,104 @@
+image: node:14-alpine
+
+cache:
+  key: ${CI_COMMIT_SHORT_SHA}
+  paths:
+    - node_modules/
+
+stages:
+  - push-develop-test-results
+  - Report
+
+
+.run-test:
+  image: ubuntu:20.04
+  script:
+    - apt update
+    - apt install -y curl
+    - TZ=America/New_York
+    - ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+    - apt install -y tzdata git
+    - apt install -y python3
+    - apt -y install python3-pip
+    - apt install -y chromium-chromedriver
+    - apt-get install software-properties-common -y
+    - apt-get -y update && apt-get install -y zip wget  jq xvfb allure default-jdk gnupg2 apt-utils wget nodejs npm
+    - node -v
+    - npm -v
+    #- curl -LO https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    #- apt-get install -y ./google-chrome-stable_current_amd64.deb
+    #- rm google-chrome-stable_current_amd64.deb
+    - wget --no-verbose -O /tmp/google-chrome-stable_${CHROME_VERSION}_amd64.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_${CHROME_VERSION}_amd64.deb
+    - apt install -y /tmp/google-chrome-stable_${CHROME_VERSION}_amd64.deb && rm /tmp/google-chrome-stable_${CHROME_VERSION}_amd64.deb
+    - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    - unzip awscliv2.zip
+    - ./aws/install
+    - curl -o allure-2.16.1.tgz -Ls https://github.com/allure-framework/allure2/releases/download/2.16.1/allure-2.16.1.tgz && tar -zxvf allure-2.16.1.tgz -C /opt/ && ln -s /opt/allure-2.16.1/bin/allure /usr/bin/allure && allure --version
+    - mkdir -p /opt/selenium
+    - cd /opt/selenium
+    - wget https://chromedriver.storage.googleapis.com/103.0.5060.134/chromedriver_linux64.zip
+    - unzip /opt/selenium/chromedriver_linux64.zip; mv chromedriver /usr/bin/chromedriver; rm -rf chromedriver_linux64.zip; chmod +x /usr/bin/chromedriver
+    - git clone -b ${CI_COMMIT_REF_NAME} https://gitlab-ci-test-token:${CI_TEST_JOB_TOKEN}@scm.practicallogix.com/devops/mgm-automation.git
+    - cd mgm-automation
+    - google-chrome --version
+    - chromedriver -v
+    - pip install -U selenium pytest
+    - pip  install -r requirements.txt
+    - pwd
+    # - set +e; python3 -m pytest --alluredir=allure-results tests/test_mgm_roar.py -v --junitxml=./test-reports/report.xml
+#    - mkdir -p ${CI_PROJECT_DIR}/htmlReport/tests
+    - mkdir -p ${CI_PROJECT_DIR}/report
+    - set +e; python3 -m pytest -s -v --set_url https://roar.dev.mgm.com/login --junitxml=report.xml --html=${CI_PROJECT_DIR}/report/report.html --cache-clear
+    - export AWS_REGION=us-west-2
+    - export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+    - export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_KEY_ID}
+#    - mkdir -p ${CI_PROJECT_DIR}/report
+#    - mkdir public
+    - mv report.xml ${CI_PROJECT_DIR}/report
+#    - mv report.html ${CI_PROJECT_DIR}/report
+#    - mv report.html public
+    # - allure generate allure-results --clean -o allure-report
+    #- aws s3 rm s3://${s3_bucket}/allure-report --recursive
+    #- cat /opt/selenium/mgm-automation/report.xml
+    #- aws s3 cp report.xml  s3://${s3_bucket}/allure-report/report.xml
+    #- INVALIDATION_ID=$(aws cloudfront create-invalidation --distribution-id ${CFRONT} --paths "/allure-report/*" | jq -r '.Invalidation.Id')
+    #- aws cloudfront wait invalidation-completed --id $INVALIDATION_ID --distribution-id ${CFRONT}
+    - diff_json=`git diff --name-only HEAD HEAD~1 | grep "postman/mgm.json"`; if [ "$diff_json" == "postman/mgm.json" ] ; then npm install -g newman; newman run ./postman/mgm.json; else echo "skip"; fi
+
+  artifacts:
+    when: always
+    paths:
+      - report
+    reports:
+      junit: ${CI_PROJECT_DIR}/report/report.xml
+  cache:
+    key: ${CI_COMMIT_SHORT_SHA}-${CI_COMMIT_BRANCH}
+    paths:
+      - pip
+
+#Report:
+#  stage: Report
+#  only:
+#    - master
+#  script:
+#    - mkdir public
+#    - mv report.html public
+#  artifacts:
+#    when: always
+#    paths:
+#      - public
+#    expire_in: 1 week
+
+
+
+push-s3:test-results:
+  extends: .run-test
+  stage: push-develop-test-results
+  variables:
+    s3_bucket: mgm-roar-report
+    CI_DEBUG_TRACE: "true"
+  environment:
+    name: develop
+  only:
+    - master
+    - mgm_dev

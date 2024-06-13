@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite name="pytest" errors="0" failures="0" skipped="0" tests="3" time="24.935"
+               timestamp="2022-02-08T12:36:11.595150" hostname="DESKTOP-CI990JN">
+        <testcase classname="tests.test_mgm_roar" name="test_Start_32810" time="4.061"/>
+        <testcase classname="tests.test_mgm_roar" name="test_loginpage" time="3.393"/>
+        <testcase classname="tests.test_mgm_roar" name="test_verifycarousalimage" time="12.793"/>
+    </testsuite>
+</testsuites>
