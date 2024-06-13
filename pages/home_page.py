@@ -997,7 +997,7 @@ class homePageObj:
 
     def verify_my_cart(self):
         self.browser.find_element(*self.my_cart).click()
-        time.sleep(5)
+        time.sleep(6)
         WebDriverWait(self.browser, 20).until(EC.presence_of_element_located(self.your_cart))
         return self.browser.find_element(*self.your_cart).is_displayed()
 
