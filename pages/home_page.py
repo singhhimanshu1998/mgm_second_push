@@ -1,6 +1,7 @@
 import allure, time
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
@@ -167,7 +168,11 @@ class homePageObj:
     mgm_text=(By.XPATH,"//span[text()='MGM+ Screeners Admin']")
     mgm_roar_img=(By.XPATH,"//button[contains(@class,'dropdown-toggle btn')]")
     delete_cart_cross_button = (By.XPATH,'//div[@class="modal-content"]//div[@class="close-x desk-close"]/img[@src="assets/images/icons/black-close.png"]')
-
+    search_bar=(By.XPATH,'//input[@placeholder="Search Users"]')
+    search_value=(By.XPATH,'(//tbody/tr[@class="table-container"]//td[@class="nameColWidth paddingLeft0Px click-info"]/div[text()=" tara "])[1]')
+    search_icon_btn=(By.XPATH,'//input[@placeholder="Search Users"]/parent::div//button[@type="submit"]')
+    invite_button=(By.XPATH,'//div[text()="INVITES"]')
+    invite_tag_name=(By.XPATH,'//th[text()="Name/Email/Company"]')
 
 
     def __init__(self, browser):
@@ -1071,6 +1076,36 @@ class homePageObj:
         time.sleep(6)
         WebDriverWait(self.browser, 20).until(EC.presence_of_element_located(self.mgm_text))
         return self.browser.find_element(*self.mgm_text).is_displayed()
+
+    def verify_search_field(self,value):
+        WebDriverWait(self.browser, 20).until(EC.presence_of_element_located(self.search_bar))
+        time.sleep(1)
+        self.browser.find_element(*self.search_bar).clear()
+        time.sleep(.5)
+        self.browser.find_element(*self.search_bar).send_keys(value)
+        time.sleep(2)
+        self.browser.find_element(*self.search_bar).send_keys(Keys.ENTER)
+        #self.browser.find_element(*self.search_icon_btn).click()
+        time.sleep(2)
+        WebDriverWait(self.browser, 20).until(EC.presence_of_element_located(self.search_value))
+        time.sleep(2)
+        return self.browser.find_element(*self.search_value).is_displayed()
+
+    def verify_invite_button(self):
+        self.browser.find_element(*self.invite_button).click()
+        time.sleep(4)
+        WebDriverWait(self.browser, 20).until(EC.presence_of_element_located(self.invite_tag_name))
+        time.sleep(2)
+        return self.browser.find_element(*self.invite_tag_name).is_displayed()
+
+
+
+
+
+
+
+
+
 
 
 

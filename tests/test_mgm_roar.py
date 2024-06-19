@@ -436,7 +436,17 @@ def test_mgm_admin(browser):
     my_mgm_button=mgm_cart.verify_mgm_admin()
     assert my_mgm_button==True
 
+def test_search_field(browser):
+    home=homepage(browser)
+    search_box=homePageObj (browser)
+    search_icon=search_box.verify_search_field("tara")
+    assert search_icon==True
 
+def test_invite_button(browser):
+        home = homepage(browser)
+        invite_box = homePageObj(browser)
+        invite_icon = invite_box.verify_invite_button()
+        assert invite_icon == True
 
 # def test_create_list(browser):
 #     global test,my_comment
